@@ -4,7 +4,7 @@
 
         this.bmd = null;
 
-        this.alien = null;
+        this.star = null;
 
         this.mode = 0;
 
@@ -31,10 +31,8 @@
 
             //  We need this because the assets are on Amazon S3
             //  Remove the next 2 lines if running locally
-            this.load.baseURL = 'http://files.phaser.io.s3.amazonaws.com/codingtips/issue008/';
-            this.load.crossOrigin = 'anonymous';
 
-            this.load.image('alien', 'assets/ufo.png');
+            this.load.image('star', 'assets/star.png');
             this.load.bitmapFont('shmupfont', 'assets/shmupfont.png', 'assets/shmupfont.xml');
 
             //  Note: Graphics are not for use in any commercial project
@@ -46,8 +44,8 @@
             this.bmd = this.add.bitmapData(this.game.width, this.game.height);
             this.bmd.addToWorld();
 
-            this.alien = this.add.sprite(0, 0, 'alien');
-            this.alien.anchor.set(0.5);
+            this.star = this.add.sprite(0, 0, 'star');
+            this.star.anchor.set(0.5);
 
             var py = this.points.y;
 
@@ -130,8 +128,8 @@
 
         update: function () {
 
-            this.alien.x = this.path[this.pi].x;
-            this.alien.y = this.path[this.pi].y;
+            this.star.x = this.path[this.pi].x;
+            this.star.y = this.path[this.pi].y;
 
             this.pi++;
 
