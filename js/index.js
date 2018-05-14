@@ -33,7 +33,7 @@
             //  Remove the next 2 lines if running locally
 
             this.load.image('star', 'assets/star.png');
-            this.load.bitmapFont('shmupfont', 'assets/shmupfont.png', 'assets/shmupfont.xml');
+            //this.load.bitmapFont('shmupfont', 'assets/shmupfont.png', 'assets/shmupfont.xml');
 
             //  Note: Graphics are not for use in any commercial project
 
@@ -54,39 +54,13 @@
                 py[i] = this.rnd.between(32, 432);
             }
 
-            this.hint = this.add.bitmapText(8, 444, 'shmupfont', "Linear", 24);
+            //this.hint = this.add.bitmapText(8, 444, 'shmupfont', "Linear", 24);
 
-            this.input.onDown.add(this.changeMode, this);
-
-            this.plot();
-
-        },
-
-        changeMode: function () {
-
-            this.mode++;
-
-            if (this.mode === 3)
-            {
-                this.mode = 0;
-            }
-
-            if (this.mode === 0)
-            {
-                this.hint.text = "Linear";
-            }
-            else if (this.mode === 1)
-            {
-                this.hint.text = "Bezier";
-            }
-            else if (this.mode === 2)
-            {
-                this.hint.text = "Catmull Rom";
-            }
 
             this.plot();
 
         },
+
 
         plot: function () {
 
