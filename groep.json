@@ -1,0 +1,202 @@
+{
+	"groep": [{
+		"nummer": "1a",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Wim",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Tijl",
+				"achternaam": "test-2"
+			}
+		]
+	},{
+        "nummer": "1b",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Robert",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Marloes",
+				"achternaam": "test-2"
+			}
+		]
+    },{
+        "nummer": "2",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Robert",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Marloes",
+				"achternaam": "test-2"
+			}
+		]
+    },{
+        "nummer": "3",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Robert",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Marloes",
+				"achternaam": "test-2"
+			}
+		]
+    },{
+        "nummer": "4",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Robert",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Marloes",
+				"achternaam": "test-2"
+			}
+		]
+    },{
+        "nummer": "5",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Robert",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Marloes",
+				"achternaam": "test-2"
+			}
+		]
+    },{
+        "nummer": "6",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Robert",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Marloes",
+				"achternaam": "test-2"
+			}
+		]
+    },{
+        "nummer": "7",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Robert",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Marloes",
+				"achternaam": "test-2"
+			}
+		]
+    },{
+        "nummer": "8",
+		"leerling": [{
+			"voornaam": "Jan",
+			"achternaam": "Klaas",
+			"leefttijd": 4
+
+		}, {
+			"voornaam": "Ismail",
+			"achternaam": "Haha",
+			"leeftijd": 5
+		}],
+
+		"leerkracht": [{
+				"voornaam": "Robert",
+				"achternaam": "test-2"
+			},
+			{
+				"voornaam": "Marloes",
+				"achternaam": "test-2"
+			}
+		]
+    }]
+
+}

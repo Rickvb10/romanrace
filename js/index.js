@@ -33,6 +33,7 @@
             //  Remove the next 2 lines if running locally
 
             this.load.image('star', 'assets/star.png');
+            this.load.json('version', 'groep.json');
             //this.load.bitmapFont('shmupfont', 'assets/shmupfont.png', 'assets/shmupfont.xml');
 
             //  Note: Graphics are not for use in any commercial project
@@ -43,6 +44,21 @@
 
             this.bmd = this.add.bitmapData(this.game.width, this.game.height);
             this.bmd.addToWorld();
+
+            var parserJson = this.cache.getJSON('version');
+
+            //console.log(parserJson);
+
+            for(let groep of parserJson.groep){
+               // console.log(groep);
+                 for(let [key,value] of Object.entries(groep)){
+                    console.log(value);
+                 }
+            }
+
+           // var text = game.add.text(100, 100, "" + parserJson.groep, { fill: '#ffffff' });
+        //    text.setShadow(2, 2, 'rgba(0,0,0,0.5)', 0);
+        
 
             this.star = this.add.sprite(0, 0, 'star');
             this.star.anchor.set(0.5);
@@ -85,9 +101,6 @@
                 // }
                 var px = this.math.catmullRomInterpolation(this.points.x, i);
                 var py = this.math.catmullRomInterpolation(this.points.y, i);
-
-                console.log(this.points.x);
-
 
                 this.path.push( { x: px, y: py });
 
