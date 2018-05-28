@@ -1,3 +1,32 @@
+
+    // async function asyncData() {
+    //     const response = await fetch('leerling.php');
+    //     const data = await response.json();
+    //     return data;
+    // }
+
+    // (async () => {
+    //     const result = await asyncData();
+    //     console.log(result);
+
+    //   })()
+
+    function getData(){
+         return fetch('leerling.php')
+          .then(response => response.json())
+          .then(data => successHandler(data))
+        .catch(error => errorHandler(error))
+         }
+
+         function successHandler(data){
+                return data       
+               }
+               function errorHandler(error){
+                console.log(error);
+               }
+        getData();
+
+
     var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
 
     var PhaserGame = function () {
@@ -15,7 +44,10 @@
 
         this.pi = 0;
         this.path = [];
-
+        let data = getData();
+        data.then(function(value){
+            console.log(value);
+        })
     };
 
     PhaserGame.prototype = {
@@ -45,16 +77,16 @@
             this.bmd = this.add.bitmapData(this.game.width, this.game.height);
             this.bmd.addToWorld();
 
-            var parserJson = this.cache.getJSON('version');
+            // var parserJson = this.cache.getJSON('version');
 
-            //console.log(parserJson);
+            // //console.log(parserJson);
 
-            for(let groep of parserJson.groep){
-               // console.log(groep);
-                 for(let [key,value] of Object.entries(groep)){
-                    console.log(value);
-                 }
-            }
+            // for(let groep of parserJson.groep){
+            //    // console.log(groep);
+            //      for(let [key,value] of Object.entries(groep)){
+            //         console.log(value);
+            //      }
+            // }
 
            // var text = game.add.text(100, 100, "" + parserJson.groep, { fill: '#ffffff' });
         //    text.setShadow(2, 2, 'rgba(0,0,0,0.5)', 0);

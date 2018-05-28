@@ -1,15 +1,14 @@
 {
 	"groep": [{
 		"nummer": "1a",
-		"leerling": [{
-			"voornaam": "Jan",
-			"achternaam": "Klaas",
-			"leefttijd": 4
-
+		"leerlingen": [{
+			"leerling":{
+				"voornaam": "Jan",
+				"achternaam": "Klaas",
+				"leefttijd": 4	
+			}
 		}, {
-			"voornaam": "Ismail",
-			"achternaam": "Haha",
-			"leeftijd": 5
+
 		}],
 
 		"leerkracht": [{
@@ -23,7 +22,7 @@
 		]
 	},{
         "nummer": "1b",
-		"leerling": [{
+		"leerlingen": [{
 			"voornaam": "Jan",
 			"achternaam": "Klaas",
 			"leefttijd": 4
@@ -45,7 +44,7 @@
 		]
     },{
         "nummer": "2",
-		"leerling": [{
+		"leerlingen": [{
 			"voornaam": "Jan",
 			"achternaam": "Klaas",
 			"leefttijd": 4
@@ -67,7 +66,7 @@
 		]
     },{
         "nummer": "3",
-		"leerling": [{
+		"leerlingen": [{
 			"voornaam": "Jan",
 			"achternaam": "Klaas",
 			"leefttijd": 4
@@ -89,7 +88,7 @@
 		]
     },{
         "nummer": "4",
-		"leerling": [{
+		"leerlingen": [{
 			"voornaam": "Jan",
 			"achternaam": "Klaas",
 			"leefttijd": 4
@@ -111,7 +110,7 @@
 		]
     },{
         "nummer": "5",
-		"leerling": [{
+		"leerlingen": [{
 			"voornaam": "Jan",
 			"achternaam": "Klaas",
 			"leefttijd": 4
@@ -133,7 +132,7 @@
 		]
     },{
         "nummer": "6",
-		"leerling": [{
+		"leerlingen": [{
 			"voornaam": "Jan",
 			"achternaam": "Klaas",
 			"leefttijd": 4
@@ -155,7 +154,7 @@
 		]
     },{
         "nummer": "7",
-		"leerling": [{
+		"leerlingen": [{
 			"voornaam": "Jan",
 			"achternaam": "Klaas",
 			"leefttijd": 4
@@ -177,7 +176,7 @@
 		]
     },{
         "nummer": "8",
-		"leerling": [{
+		"leerlingen": [{
 			"voornaam": "Jan",
 			"achternaam": "Klaas",
 			"leefttijd": 4
