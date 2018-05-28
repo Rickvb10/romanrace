@@ -26,7 +26,10 @@ var preload = {
         // Loading all assets
         game.load.audio('sfx1', 'assets/sounds/correct.mp3');
         game.load.audio('sfx2', 'assets/sounds/incorrect.mp3');
+
         game.load.image('background', 'assets/Main_background1.png');
+        game.load.image('background_with_Rick', 'assets/backgrounds/Background_with_Rick.png');
+
         game.load.image('menuBK', 'assets/menuBK.png');
         game.load.image('menuRound','assets/menu_round.png');
         game.load.image('menuRobot', 'assets/menu_robot.png');
@@ -34,6 +37,7 @@ var preload = {
         game.load.atlas('horse', 'assets/horse.png', 'assets/horse_json.json');
 
         game.load.image('loginButton', 'assets/buttons/inlog_button.png');
+        game.load.image('next', 'assets/buttons/verder.png');
 
         game.load.image('romanRobot', 'assets/romanRobot_300x400-13.png');
         game.load.image('inlog_bk', 'assets/transparent_white_bk-13.png');

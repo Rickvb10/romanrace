@@ -18,7 +18,10 @@ var menu = {
     },
     begin:function () {
         // Start Rick game sprite
-        game.state.start('Start')
+        // game.state.start('Start')
+        //story has start
+        game.state.start('Story')
+
     },
     logout:function () {
         game.state.start('Login')
