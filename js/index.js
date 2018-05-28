@@ -44,8 +44,9 @@
 
         this.pi = 0;
         this.path = [];
+
         let data = getData();
-        data.then(function(value){
+        data.then((value) =>{
             console.log(value);
         })
     };
