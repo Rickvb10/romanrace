@@ -1,3 +1,7 @@
+
+// import { value } from "./Preload";
+
+//console.log(value);
 var card;
 var cardNameArray = ['',
     'card_1', 'card_2', 'card_3', 'card_4', 'card_5', 'card_6', 'card_7', 'card_8', 'card_9', 'card_10',

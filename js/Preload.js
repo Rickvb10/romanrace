@@ -1,3 +1,26 @@
+function getData(){
+    return fetch('leerling.php')
+     .then(response => response.json())
+     .then(data => successHandler(data))
+   .catch(error => errorHandler(error))
+    }
+
+    function successHandler(data){
+           return data       
+          }
+    function errorHandler(error){
+           console.log(error);
+          }
+   getData();
+
+let data = getData()
+data.then((value) =>{
+    console.log(value)
+})
+
+//export { value };
+ 
+
 var preload = {
     preload:function () {
         // Loading all assets
