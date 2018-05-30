@@ -1,9 +1,11 @@
 var menu = {
     create:function () {
-        console.log('menu');
+        game.load.json('leerlingen', 'results.json');
+        const leerlingen = game.cache.getJSON('leerlingen');
+        console.log(leerlingen);
         var x = game.world.centerX;
         var y = game.world.centerY;
-
+    
         var background_sprite = game.add.sprite(0,0,'menuBK');
         var background_circle = game.add.sprite(x - 400,y - 128, 'menuRound');
         var robot = game.add.sprite(x - 215, y - 350, 'menuRobot');

@@ -1,0 +1,92 @@
+[{
+	"id": "1",
+	"voornaam": "Rickert",
+	"achternaam": "van Buuren",
+	"leeftijd": "10",
+	"groep_id": "6",
+	"niveau": "1"
+}, {
+	"id": "2",
+	"voornaam": "Ismailert",
+	"achternaam": "Hussein",
+	"leeftijd": "10",
+	"groep_id": "6",
+	"niveau": "1"
+}, {
+	"id": "3",
+	"voornaam": "Nienke",
+	"achternaam": ":) als achternaam",
+	"leeftijd": "21",
+	"groep_id": "8",
+	"niveau": "3"
+}, {
+	"id": "4",
+	"voornaam": "Noah",
+	"achternaam": "van der Linden",
+	"leeftijd": "7",
+	"groep_id": "5",
+	"niveau": "1"
+}, {
+	"id": "5",
+	"voornaam": "Sem",
+	"achternaam": "Joram",
+	"leeftijd": "4",
+	"groep_id": "1",
+	"niveau": "1"
+}, {
+	"id": "6",
+	"voornaam": "Emma",
+	"achternaam": "Joost",
+	"leeftijd": "12",
+	"groep_id": "8",
+	"niveau": "3"
+}, {
+	"id": "7",
+	"voornaam": "Lucas",
+	"achternaam": "Basques",
+	"leeftijd": "10",
+	"groep_id": "6",
+	"niveau": "2"
+}, {
+	"id": "8",
+	"voornaam": "Lucas",
+	"achternaam": "van Hoorn",
+	"leeftijd": "10",
+	"groep_id": "6",
+	"niveau": "2"
+}, {
+	"id": "9",
+	"voornaam": "Milan",
+	"achternaam": "Jansen",
+	"leeftijd": "9",
+	"groep_id": "5",
+	"niveau": "1"
+}, {
+	"id": "10",
+	"voornaam": "Sophie",
+	"achternaam": "Haarlem",
+	"leeftijd": "11",
+	"groep_id": "7",
+	"niveau": "2"
+}, {
+	"id": "11",
+	"voornaam": "James",
+	"achternaam": "Rodriguez",
+	"leeftijd": "11",
+	"groep_id": "7",
+	"niveau": "1"
+}, {
+	"id": "12",
+	"voornaam": "Laurentien",
+	"achternaam": "Prins",
+	"leeftijd": "7",
+	"groep_id": "3",
+	"niveau": "1"
+}, {
+	"id": "13",
+	"voornaam": "Lotte",
+	"achternaam": "Zalm",
+	"leeftijd": "10",
+	"groep_id": "6",
+	"niveau": "2"
+}]

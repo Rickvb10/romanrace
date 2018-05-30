@@ -26,5 +26,7 @@ if (empty($result)){
 	));
     }
      else{
-	echo json_encode($result);
+    $fp = fopen('results.json','w');
+    fwrite($fp,json_encode($result));
+    fclose($fp);
 	}

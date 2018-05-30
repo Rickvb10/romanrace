@@ -5,7 +5,8 @@ var login = {
         //create & position image
         var x = game.world.centerX;
         var y = game.world.centerY;
-
+        game.load.json('leerlingen', 'results.json');
+        const leerlingen = game.cache.getJSON('leerlingen');
         var background_sprite = game.add.sprite(0,0,"background");
         var transparent_bk = game.add.sprite(x - 415 , y - 250, 'inlog_bk');
         var roman_robot = game.add.sprite( x + 180, y - 110, 'romanRobot');

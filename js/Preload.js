@@ -1,25 +1,32 @@
-function getData(){
-    return fetch('leerling.php')
-     .then(response => response.json())
-     .then(data => successHandler(data))
-   .catch(error => errorHandler(error))
-    }
 
-    function successHandler(data){
-           return data       
-          }
-    function errorHandler(error){
-           console.log(error);
-          }
-   getData();
 
-let data = getData()
-data.then((value) =>{
-    console.log(value)
-})
+// function getData(){
+//     return fetch('leerling.php')
+//      .then(response => response.json())
+//      .then(data => successHandler(data))
+//    .catch(error => errorHandler(error))
+//     }
 
-//export { value };
- 
+
+//     function successHandler(data){
+//             x = data
+//            return data     
+//           }
+//     function errorHandler(error){
+//            console.log(error);
+//           }
+//    getData();
+
+
+
+// let data = getData()
+//  data.then(function(value){
+    
+//  console.log(value)
+// })
+
+
+
 
 var preload = {
     preload:function () {
@@ -38,6 +45,9 @@ var preload = {
         game.load.image('romanRobot', 'assets/romanRobot_300x400-13.png');
         game.load.image('inlog_bk', 'assets/transparent_white_bk-13.png');
         game.load.image('logout_button', 'assets/buttons/logout_button.png');
+        game.load.json('leerlingen', 'results.json');
+        const leerlingen = game.cache.getJSON('leerlingen');
+        console.log(leerlingen)
 
         for(var i = 0; i < cardNameArray.length - 1; i++){
             game.load.image('card_' + (i + 1), 'assets/cards/card' + (i + 1) + '.png');
@@ -51,6 +61,7 @@ var preload = {
     },
     create:function () {
         //starting login state
-        game.state.start('Login')
+
+        game.state.start('pre_login')
     }
 };
