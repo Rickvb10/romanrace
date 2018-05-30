@@ -4,7 +4,7 @@ var content = [
     " ",
     "Rick: Welkom bij Roman Race, ruiter",
     "Rick: Je staat nu in het Circus Maximus.",
-    "Rick: Hier worden de meest dappere paarden races\nhouden."
+    "Rick: Hier worden de meest dappere paarden races\ngehouden."
 ];
 
 var text;

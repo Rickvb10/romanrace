@@ -35,7 +35,6 @@ var start = {
         fx2.addMarker('incorrect', 0, 4.0);
 
         var background = game.add.sprite(0, 0, 'background');
-        background.scale.setTo(0.25, 0.25);
 
         horse = game.add.sprite(game.world.centerX - 300, game.world.centerY - 150, 'horse');
 
