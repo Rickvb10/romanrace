@@ -40,6 +40,8 @@ var preload = {
         game.load.image('startButton', 'assets/buttons/startButton.png');
         game.load.image('logoutButton', 'assets/buttons/logoutButton.png');
         game.load.image('next', 'assets/buttons/verder.png');
+        game.load.image('klasButton', 'assets/buttons/klasButton.png');
+        game.load.image('nameButton', 'assets/buttons/klasButton.png');
 
         //characters
         game.load.image('rickSmall', 'assets/character/rickSmall.png');
@@ -49,6 +51,10 @@ var preload = {
         //text
         game.load.image('welcomeText', 'assets/welcomeText.png');
         game.load.image('loginText', 'assets/loginText.png');
+
+        //json
+
+        game.load.json('leerlingen', 'results.json');
 
         for(var i = 0; i < cardNameArray.length - 1; i++){
             game.load.image('card_' + (i + 1), 'assets/cards/card' + (i + 1) + '.png');
