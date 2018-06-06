@@ -45,6 +45,14 @@ var preload = {
         game.load.image('rickSmall', 'assets/character/rickSmall.png');
         game.load.image('rickLarge', 'assets/character/rickLarge.png');
         game.load.atlas('horse', 'assets/horse.png', 'assets/horse_json.json');
+        game.load.image('miniHorse2', 'assets/character/horse2.png');
+        game.load.image('miniHorse', 'assets/character/horse1.png');
+
+        //objects
+        game.load.image('gameDashboard', 'assets/objects/gameDashboard.png');
+        game.load.image('map','assets/objects/map.png');
+        game.load.image('finish','assets/objects/finish.png');
+        game.load.image('start','assets/objects/start.png');
 
         //text
         game.load.image('welcomeText', 'assets/welcomeText.png');
@@ -59,6 +67,6 @@ var preload = {
     },
     create:function () {
         //starting login state
-        game.state.start('Pre_login')
+        game.state.start('Start')
     }
 };
