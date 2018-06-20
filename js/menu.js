@@ -15,13 +15,13 @@ var menu = {
         console.log(name)
 
         let styleButton = { font: "28px Arial", fill: "#000000", align: "center"};
-        var text = game.add.text(game.world.centerX, 150, "Hallo" + name, styleButton);
+        var text = game.add.text(20, 50, "Hallo " + name, styleButton);
     },
     nextState:function () {
         // Start Rick game sprite
         // game.state.start('Start')
         //story has start
-        game.state.start('Story')
+        game.state.start('Start')
     },
     logout:function () {
         game.state.start('Login')

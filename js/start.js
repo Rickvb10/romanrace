@@ -137,7 +137,7 @@ var start = {
         horse.scale.setTo(1.2,1.2);
 
         style = { font: "bold 32px Arial", fill: "#ddd", boundsAlignH: "center", boundsAlignV: "middle" };
-        scoreTekst = game.add.text(x - 500 ,y - 350 , "SCORE : " + score , style)
+        // scoreTekst = game.add.text(x - 500 ,y - 350 , "SCORE : " + score , style)
         lapsTekst = game.add.text( 800 , 25 , "Ronde : " + laps + "/3" , style)
 
 
