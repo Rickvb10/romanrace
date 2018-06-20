@@ -48,6 +48,7 @@ var preload = {
         game.load.image('rickSmall', 'assets/character/rickSmall.png');
         game.load.image('rickLarge', 'assets/character/rickLarge.png');
         game.load.image('horse', 'assets/character/horseNcart.png');
+        game.load.image('win','assets/backgrounds/win.png');
 
         game.load.image('miniHorse2', 'assets/character/horse2.png');
         game.load.image('miniHorse', 'assets/character/horse1.png');
@@ -86,6 +87,6 @@ var preload = {
     create:function () {
         //starting login state
         //game.state.start('Pre_login')
-        game.state.start('Start')
+        game.state.start('Pre_login')
     }
 };
