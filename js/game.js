@@ -9,6 +9,7 @@ game.state.add("Login", login);
 game.state.add("Start", start);
 game.state.add("Story", story);
 game.state.add("Menu", menu);
+game.state.add("Endscreen",endscreen);
 
 // starting Boot state
 game.state.start("Boot");
