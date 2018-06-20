@@ -29,7 +29,7 @@ var startline;
 
 var userData;
 
-var speed = 155;
+var speedH;
 
 var speed;
 var computer;
@@ -70,11 +70,11 @@ var start = {
         enemyrounds = 0;
         playerrounds = 0;
         laps = 0;
-        nextlap = false
-        
+        nextlap = false;
+        speedH = 90;
 
         countDownTimer = game.time.create(false);
-        countDownTimer.loop(3000,StartPlaying,this)
+        countDownTimer.loop(3000,StartPlaying,this);
 
         countDownTimer.start();
 
@@ -83,8 +83,18 @@ var start = {
             // this.generateCard();
             horse.animations.play('walk');
             startbackground = true;
+
+            dust1.animations.play('move',speedH,true);
+            tail.animations.play('role',speedH,true);
+            dust2.animations.play('move',speedH,true);
+            backleg.animations.play('role',speedH,true);
+            frontleg.animations.play('role',speedH,true);
+            wheel.animations.play('role',speedH,true);
+            dust2.animations.play('move',speedH,true);
+
+            tijdelijkebk.destroy();
+            tijdelijke.destroy();
             // remove timer
-        
         }
 
         fx1 = game.add.audio('sfx1');
@@ -96,44 +106,36 @@ var start = {
         fx2.allowMultiple = true;
         fx2.addMarker('incorrect', 0, 4.0);
 
-
         game.add.sprite(0, 0, 'background');
         game.add.sprite(x - 210,y + 170,'gameDashboard');
         game.add.sprite(x - 490,y + 112,'map');
+
+        background = game.add.sprite(0, 0, 'background');
+        var gameDashboard = game.add.sprite(x - 210,y + 170,'gameDashboard');
+        var map = game.add.sprite(x - 490,y + 112,'map');
 
         var road = game.add.sprite(x - 450,y + 230,'road');
         road.scale.setTo(0.9,0.9);
 
         var dust1 = game.add.sprite(x - 300, y + 80, 'dust1');
         dust1.animations.add('move');
-        dust1.animations.play('move',speed,true);
 
-        var dust2 = game.add.sprite(x - 650, y - 1, 'dust2');
-        dust2.animations.add('move');
-        dust2.animations.play('move',speed,true);
 
         var backleg = game.add.sprite(x - 140, y - 48, 'backleg');
         backleg.animations.add('role');
-        backleg.animations.play('role',speed,true);
         backleg.scale.setTo(1.2,1.2);
 
         var frontleg = game.add.sprite(x + 78, y - 52, 'frontleg');
         frontleg.animations.add('role');
-        frontleg.animations.play('role',speed,true);
         frontleg.scale.setTo(1.2,1.2);
 
         var tail = game.add.sprite(x - 110, y - 100, 'tail');
         tail.animations.add('role');
-        tail.animations.play('role',speed,true);
         tail.scale.setTo(1.2,1.2);
 
         horse = game.add.sprite(x - 320, y - 280, 'horse');
         horse.scale.setTo(1.2,1.2);
 
-        background = game.add.sprite(0, 0, 'background');
-        var gameDashboard = game.add.sprite(x - 210,y + 170,'gameDashboard');
-        var map = game.add.sprite(x - 490,y + 112,'map');
-        
         style = { font: "bold 32px Arial", fill: "#ddd", boundsAlignH: "center", boundsAlignV: "middle" };
         scoreTekst = game.add.text(x - 500 ,y - 350 , "SCORE : " + score , style)
         lapsTekst = game.add.text( 800 , 25 , "Ronde : " + laps + "/3" , style)
@@ -141,25 +143,23 @@ var start = {
 
         var wheel = game.add.sprite(x - 310, y - 55, 'wheel');
         wheel.animations.add('role');
-        wheel.animations.play('role',speed,true);
+
         wheel.scale.setTo(1.2,1.2);
 
 
         var dust2 = game.add.sprite(x - 750, y - 1, 'dust2');
         dust2.animations.add('move');
-        dust2.animations.play('move',speed,true);
+
+
 
         this.generateButtons(4);
         this.generateCard();
         this.map();
 
-        horse.animations.add('walk', Phaser.Animation.generateFrameNames('horse', 0, 2, '', 4), 10, true);
-        
-        this.map()
-
         this.generateButtons(4);
         this.generateCard();
-
+        var tijdelijkebk = game.add.sprite(game.world.centerX -150, game.world.centerY -358, 'white');
+        var tijdelijke = game.add.sprite(game.world.centerX  - 210,game.world.centerY  + 170,'gameDashboard');
         // console.log(getCookie('leerling'));
     },
     
@@ -251,6 +251,7 @@ var start = {
                 else{
                     // console.log('wrong');
                     speed = (-2) /game.width;
+
                     console.log(speed)
                     fx2.play('incorrect');
                     this.generateButtons(4);
@@ -260,6 +261,7 @@ var start = {
         }
         function slowDownHorse(){
             boost = 0;
+            speedH = 0;
         }
 
     },
@@ -270,12 +272,13 @@ var start = {
             y: [720,650,600,600,650,670,720,720,720]
         };
 
-        console.log(countDownTimer)
+        console.log(countDownTimer);
 
-            computer = 0.4 /game.width;
+        computer = 0.4 /game.width;
         speed = (0.3 + boost) /game.width;
+
         
-            this.i = 0;
+        this.i = 0;
         this.j = 0;
         this.timer1Stopped = true;
         this.timer1 = null;
@@ -300,11 +303,11 @@ var start = {
         miniHorse.anchor.setTo(0.5,0.5);
 
         miniHorse2 = game.add.sprite(x,y, 'miniHorse2');
-
         miniHorse2.anchor.setTo(0.5,0.5);
 
     },
     update:function () {
+        console.log(speedH);
         //Resetting timer so movements repeats itself
         // console.log(speed);
         if(timer){
