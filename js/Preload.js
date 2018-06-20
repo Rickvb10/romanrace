@@ -28,7 +28,7 @@ var preload = {
         game.load.audio('sfx2', 'assets/sounds/incorrect.mp3');
 
         //backgrounds
-        game.load.image('background', 'assets/backgrounds/mainBK.png');
+        game.load.image('background', 'assets/backgrounds/background.png');
         game.load.image('background_with_Rick', 'assets/backgrounds/Background_with_Rick.png');
         game.load.image('transparentBK', 'assets/backgrounds/transparentBK.png');
         game.load.image('menuBK', 'assets/backgrounds/menuBK.png');
@@ -85,6 +85,7 @@ var preload = {
     },
     create:function () {
         //starting login state
+        //game.state.start('Pre_login')
         game.state.start('Start')
     }
 };
