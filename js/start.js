@@ -29,12 +29,61 @@ var finish;
 var startline;
 
 var userData;
+var speed;
+var computer;
+var boost;
+
+var timer;
+var countDownTimer;
+var time;
+
+var background;
+
+var scoreTekst;
+var score;
+
+var lapsTekst;
+var laps;
+var style;
+
+var countDown;
+var startbackground
+
+var enemyrounds;
+var playerrounds;
+
+var nextlap
 
 
 var start = {
     create: function () {
         var x = game.world.centerX;
         var y = game.world.centerY;
+        
+        boost = 0;
+        time = 2;
+        score = 0;
+        speed = 0;
+        computer = 0;
+        enemyrounds = 0;
+        playerrounds = 0;
+        laps = 0;
+        nextlap = false
+        
+
+        countDownTimer = game.time.create(false);
+        countDownTimer.loop(3000,StartPlaying,this)
+
+        countDownTimer.start();
+
+        function StartPlaying(){
+            // this.generateButtons(4);
+            // this.generateCard();
+            horse.animations.play('walk');
+            startbackground = true;
+            // remove timer
+        
+        }
 
         fx1 = game.add.audio('sfx1');
         fx1.allowMultiple = true;
@@ -45,23 +94,26 @@ var start = {
         fx2.allowMultiple = true;
         fx2.addMarker('incorrect', 0, 4.0);
 
-        var background = game.add.sprite(0, 0, 'background');
+        background = game.add.sprite(0, 0, 'background');
         var gameDashboard = game.add.sprite(x - 210,y + 170,'gameDashboard');
         var map = game.add.sprite(x - 490,y + 112,'map');
-
-
+        
+        style = { font: "bold 32px Arial", fill: "#ddd", boundsAlignH: "center", boundsAlignV: "middle" };
+        scoreTekst = game.add.text(x - 500 ,y - 350 , "SCORE : " + score , style)
+        lapsTekst = game.add.text( 800 , 25 , "Ronde : " + laps + "/3" , style)
 
         horse = game.add.sprite(x - 300, y - 150, 'horse');
 
         horse.animations.add('walk', Phaser.Animation.generateFrameNames('horse', 0, 2, '', 4), 10, true);
-        horse.animations.play('walk');
+        
+        this.map()
 
         this.generateButtons(4);
         this.generateCard();
-        this.map()
 
-        console.log(getCookie('leerling'));
+        // console.log(getCookie('leerling'));
     },
+    
 
     generateButtons: function (iterations) {
         var array = [];
@@ -137,16 +189,26 @@ var start = {
             if(arguments[0].key == valuesOfImages[i]){
                 if(i == cardNameArray.indexOf(card.key)){
                     // console.log('correct');
+                    boost = 0.3;
+                    
+                    timer = game.time.events.add(Phaser.Timer.SECOND * time, slowDownHorse, this);
+                    timer.timer.duration += 2000;
+                    
                     fx1.play('correct');
                     this.generateButtons(4);
                 }
                 else{
                     // console.log('wrong');
+                    speed = (-2) /game.width;
+                    console.log(speed)
                     fx2.play('incorrect');
                     this.generateButtons(4);
                 }
                 this.generateCard();
             }
+        }
+        function slowDownHorse(){
+            boost = 0;
         }
 
     },
@@ -157,9 +219,12 @@ var start = {
             y: [720,650,600,600,650,670,720,720,720]
         };
 
-        this.increment = 0.5 /game.width;
-        this.increment2 = 0.4 /game.width;
-        this.i = 0;
+        console.log(countDownTimer)
+
+            computer = 0.4 /game.width;
+        speed = (0.3 + boost) /game.width;
+        
+            this.i = 0;
         this.j = 0;
         this.timer1Stopped = true;
         this.timer1 = null;
@@ -171,7 +236,7 @@ var start = {
         this.bmd = this.add.bitmapData(this.game.width,this.game.height);
         this.bmd.addToWorld();
         //Drawing path
-        for(var i = 0; i < 1; i+= this.increment){
+        for(var i = 0; i < 1; i+= computer){
             var px = this.math.bezierInterpolation(this.points.x, i);
             var py = this.math.bezierInterpolation(this.points.y, i);
             this.bmd.rect(px, py, 15, 15, '#006837');
@@ -184,13 +249,31 @@ var start = {
         miniHorse.anchor.setTo(0.5,0.5);
 
         miniHorse2 = game.add.sprite(x,y, 'miniHorse2');
-        miniHorse2.anchor.setTo(0.5,0.5);
-
-
+        miniHorse2.anchor.setTo(0.5,0.5);        
+    
 
     },
     update:function () {
         //Resetting timer so movements repeats itself
+        // console.log(speed);
+        if(timer){
+            console.log(timer.timer.duration);
+        }
+        //console.log(countDownTimer.duration)
+        if(countDownTimer.duration >= 1){
+            // speed = 10 / game.width;
+            speed = (0.3 + boost) /game.width;
+
+            if(startbackground){
+                background.x -= 5;
+
+                if(background.x < -1024){
+                    background.x = 0;
+                }
+            }
+            
+        }
+        
         if(this.timer1Stopped){
             this.timer1Stopped = false;
             this.timer1 = this.game.time.create(true);
@@ -198,7 +281,6 @@ var start = {
             this.timer1.start();
         }
         if(this.timer2Stopped){
-            console.log('hoi')
             this.timer2Stopped = false;
             this.timer2 = this.game.time.create(true);
             this.timer2.loop(.01, this.plot2, this);
@@ -212,7 +294,36 @@ var start = {
         miniHorse.x = posx;
         miniHorse.y = posy;
 
-        this.i += this.increment;
+        if(startbackground){
+            this.i += computer;
+            if(this.j == 0){
+                playerrounds++;
+            }
+
+            if(playerrounds == 3 || playerrounds == 2){
+                nextlap = true
+                playerrounds = 0;
+            }
+            
+            // console.log("laps = "+laps)
+        }else{  
+            this.i = 0
+        }
+
+        if(nextlap){
+            laps++
+            lapsTekst.destroy();
+            lapsTekst = game.add.text( 800 , 25 , "Ronde : " + laps + "/3" , style)
+            nextlap = false;
+        }
+
+        if(laps == 3){
+            game.state.start("Endscreen")
+        }
+
+        // console.log("enemyrounds = " + enemyrounds)
+        //console.log("bruine paard = " + playerrounds)
+
         if (posx > 220 && posy >720  ) {
             this.timer1.stop();
             this.timer1.destroy();
@@ -227,8 +338,17 @@ var start = {
         miniHorse2.x = posx;
         miniHorse2.y = posy;
 
+        if(startbackground){
+            this.j += speed;
+            if(this.i == 0){
+                enemyrounds++;
+            }
+        }else{
+            this.j = 0;
+        }
 
-        this.j += this.increment2;
+        // console.log(`enemyrounds = ${enemyrounds}`)
+
         if (posx > 220 && posy >720  ) {
             this.timer2.stop();
             this.timer2.destroy();
