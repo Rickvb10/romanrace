@@ -33,6 +33,7 @@ var preload = {
         game.load.image('transparentBK', 'assets/backgrounds/transparentBK.png');
         game.load.image('menuBK', 'assets/backgrounds/menuBK.png');
         game.load.image('transparentCircle', 'assets/backgrounds/transparentCircle.png');
+        game.load.image('white', 'assets/objects/background (1).png');
 
         //buttons
         game.load.image('nextButton', 'assets/buttons/nextButton.png');
@@ -46,7 +47,8 @@ var preload = {
         //characters
         game.load.image('rickSmall', 'assets/character/rickSmall.png');
         game.load.image('rickLarge', 'assets/character/rickLarge.png');
-        game.load.atlas('horse', 'assets/horse.png', 'assets/horse_json.json');
+        game.load.image('horse', 'assets/character/horseNcart.png');
+
         game.load.image('miniHorse2', 'assets/character/horse2.png');
         game.load.image('miniHorse', 'assets/character/horse1.png');
 
@@ -55,12 +57,22 @@ var preload = {
         game.load.image('map','assets/objects/map.png');
         game.load.image('finish','assets/objects/finish.png');
         game.load.image('start','assets/objects/start.png');
+        game.load.image('minimapCourse', 'assets/backgrounds/minimapCourse.png');
+        game.load.image('road', 'assets/objects/road.png');
+
 
         //text
         game.load.image('welcomeText', 'assets/welcomeText.png');
         game.load.image('loginText', 'assets/loginText.png');
 
         //json
+        game.load.atlas('dust1','assets/json/dust1.png', 'assets/json/dust1.json');
+        game.load.atlas('wheel','assets/json/wheel.png', 'assets/json/wheel.json');
+        game.load.atlas('backleg','assets/json/backleg.png', 'assets/json/backleg.json');
+        game.load.atlas('frontleg','assets/json/frontleg.png', 'assets/json/frontleg.json');
+        game.load.atlas('tail','assets/json/tail.png', 'assets/json/tail.json');
+        game.load.atlas('dust2','assets/json/dust2.png', 'assets/json/dust2.json');
+
 
         game.load.json('leerlingen', 'results.json');
 

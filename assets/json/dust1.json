@@ -1,0 +1,203 @@
+﻿{"frames": [
+
+{
+	"filename": "dust instantie 10000",
+	"frame": {"x":0,"y":0,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":257,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10001",
+	"frame": {"x":175,"y":0,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":246,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10002",
+	"frame": {"x":350,"y":0,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":235,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10003",
+	"frame": {"x":525,"y":0,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":223,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10004",
+	"frame": {"x":700,"y":0,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":212,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10005",
+	"frame": {"x":0,"y":90,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":201,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10006",
+	"frame": {"x":175,"y":90,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":190,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10007",
+	"frame": {"x":350,"y":90,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":179,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10008",
+	"frame": {"x":525,"y":90,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":168,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10009",
+	"frame": {"x":700,"y":90,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":156,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10010",
+	"frame": {"x":0,"y":180,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":145,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10011",
+	"frame": {"x":175,"y":180,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":134,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10012",
+	"frame": {"x":350,"y":180,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":123,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10013",
+	"frame": {"x":525,"y":180,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10014",
+	"frame": {"x":700,"y":180,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":101,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10015",
+	"frame": {"x":0,"y":270,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10016",
+	"frame": {"x":175,"y":270,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10017",
+	"frame": {"x":350,"y":270,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10018",
+	"frame": {"x":525,"y":270,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10019",
+	"frame": {"x":700,"y":270,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10020",
+	"frame": {"x":0,"y":360,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10021",
+	"frame": {"x":175,"y":360,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10022",
+	"frame": {"x":350,"y":360,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}
+,{
+	"filename": "dust instantie 10023",
+	"frame": {"x":525,"y":360,"w":175,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":432,"h":90},
+	"sourceSize": {"w":432,"h":90}
+}],
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "dust1.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}
