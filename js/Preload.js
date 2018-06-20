@@ -33,7 +33,7 @@ var preload = {
         game.load.image('transparentBK', 'assets/backgrounds/transparentBK.png');
         game.load.image('menuBK', 'assets/backgrounds/menuBK.png');
         game.load.image('transparentCircle', 'assets/backgrounds/transparentCircle.png');
-        game.load.image('white', 'assets/objects/background (1).png');
+        game.load.image('white', 'assets/objects/background(1).png');
 
         //buttons
         game.load.image('nextButton', 'assets/buttons/nextButton.png');
